@@ -33,6 +33,10 @@ function b($arg){
 
 function d($arg){
     var_dump($arg);
+    // trigger error
+    trigger_error('Custom notice ', E_USER_NOTICE);
+    trigger_error('Custom error ', E_USER_ERROR);
+    trigger_error('Custom warning', E_USER_WARNING);
     getBackTrace();
 }
 
